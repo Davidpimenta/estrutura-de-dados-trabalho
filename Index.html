@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árvores em Estruturas de Dados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <section class="container-header">
+            
+            <div class="container-title">
+                <h1>Árvore</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-network"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li class="menu-opt sobre">O que é</li>
+                        <li class="menu-opt representacoes">Representações</li>
+                        <li class="menu-opt definicoes">Definições</li>
+                        <li class="menu-opt tipos">Tipos</li>
+                        <li class="menu-opt percorrendo">Percorrendo</li>
+                        <li class="menu-opt utilidades">Ultilidades</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    
+    <main>
+        <section class="section" id="main">
+            <div class="container-all" id="main-div">
+                <div class="conteiner-title">
+                    <h1 id="main-title">Árvores de Estrutura de Dados</h1>
+                </div>
+                <div class="conteiner-arvore">
+                    <div class="c1">
+                        <div class="raiz">
+                            <span class="background"></span>
+                            <p>A</p>
+                            <span class="aresta aresta-esquerda" id="rE"></span>
+                            <span class="aresta aresta-direita" id="rD"></span>
+                        </div>
+                    </div>
+                    <div class="c2">
+                        <div class="arvore2"> 
+                            <span class="background"></span>
+                            <p>B</p>
+                            <span class="aresta2 aresta-esquerda2"></span>
+                            <span class="aresta2 aresta-direita2"></span>
+                        </div>
+                        
+                        <div class="arvore3">
+                            <span class="background"></span>
+                            <p>C</p>
+                            <span class="aresta2 aresta-esquerda3"></span>
+                            <span class="aresta2 aresta-direita3"></span>
+                        </div>
+                    </div>
+                    <div class="c3">
+                        <div class="arvore4"><span class="background"></span><p>D</p></div>
+                        <div class="arvore5"><span class="background"></span><p>E</p></div>
+                        <div class="arvore6"><span class="background"></span><p>F</p></div>
+                        <div class="arvore7"><span class="background"></span><p>G</p></div>
+                    </div>
+                </div>
+                <div class="desc">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bug"><path d="m8 2 1.88 1.88"/><path d="M14.12 3.88 16 2"/><path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><path d="M12 20v-9"/><path d="M6.53 9C4.6 8.8 3 7.1 3 5"/><path d="M6 13H2"/><path d="M3 21c0-2.1 1.7-3.9 3.8-4"/><path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><path d="M22 13h-4"/><path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></svg>
+                </div>
+            </div>
+
+            <div class="container-button" id="cm">
+                <button id="comecar-main">Começar</button>
+            </div>
+        </section>
+        
+        <section class="section" id="sobre">
+            <div class="container-all-sobre" id="div-sobre">
+                <div class="container-title-sobre">
+                    <h2>O que é uma árvore em estrutura de dados?</h2>
+                </div>
+                <div class="container-cards">
+                    <div class="card-c1">
+                         <div class="card">
+                           <div class="card-bc"></div>
+                            <div class="content"><p>Uma árvore é um conjunto de nós estruturados de maneira hierárquica.</p><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></div>
+
+                        </div>
+                    </div>
+                    <div class="card-c2">
+                        <div class="card">
+                            <div class="card-bc"></div>
+                            <div class="content" id="card2"><p>Essa estrutura pode ser representada de varias maneiras, como hierarquicamente, por diagrama de venn e outros que veremos a seguir</p><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-bc"></div>
+                            <div class="content"><p>Uma árvore pode ser de diversos tipos como: AVL, QuadTree e binarias.</p><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tree-deciduous"><path d="M8 19a4 4 0 0 1-2.24-7.32A3.5 3.5 0 0 1 9 6.03V6a3 3 0 1 1 6 0v.04a3.5 3.5 0 0 1 3.24 5.65A4 4 0 0 1 16 19Z"/><path d="M12 19v3"/></svg></div>
+
+                        </div>
+                    </div>
+                    <div class="card-c3">
+                        <div class="card">
+                            <div class="card-bc"></div>
+                            <div class="content" id="card3"><p>Essa estrutura pode ser usada em: Aprendizado de máquina, em índices de banco de dados e em sistemas de decisão</p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg></div>
+                        </div>
+                        <div class="card">
+                            <div class="card-bc"></div>
+                            <div class="content" id="card4"><p>É formada por nós que são denominados de formas diferentes de acordo com a sua posição na árvore.</p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-button" id="cs">
+                <button id="comecar-sobre">Começar</button>
+            </div>
+        </section>
+    </main>
+
+    <section class="section" id="representacoes">
+        <div class="container-all-representacoes">
+            <div class="container-title-representacoes">
+                <h2>Todas as representações de Árvores</h2>
+            </div>
+            <div class="container-content-representacoes">
+
+                <div class="border-container-carrocel"></div>
+                <div class="container-carrocel">
+                    <div class="arrow arrow-esquerda">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-step-back"><line x1="18" x2="18" y1="20" y2="4"/><polygon points="14,20 4,12 14,4"/></svg>
+                    </div>
+                    <div class="carrocel">
+                        <div class="img" id="representacao-arvore">
+                            
+                            <div class="rep-c1">
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>A</p>
+                                    <span class="aresta aresta-direita rep-aresta"></span>
+                                    <span class="aresta aresta-esquerda rep-aresta"></span>
+                                </div>
+                            </div>
+                            <div class="rep-c2">
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>B</p>
+                                    <span class="aresta aresta-direita rep-aresta"></span>
+                                    <span class="aresta aresta-esquerda rep-aresta"></span>
+                                </div>
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>C</p>
+                                    <span class="aresta aresta-direita rep-aresta"></span>
+                                    <span class="aresta aresta-esquerda rep-aresta"></span>
+                                </div>
+                            </div>
+                            <div class="rep-c3">
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>D</p>
+                                    <span class="aresta aresta-direita rep-aresta"></span>
+                                    <span class="aresta aresta-esquerda rep-aresta"></span>
+                                </div>
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>E</p>
+                                    <span class="aresta aresta-direita rep-aresta"></span>
+                                    <span class="aresta aresta-esquerda rep-aresta"></span>
+                                </div>
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>F</p>
+                                    <span class="aresta aresta-direita rep-aresta"></span>
+                                    <span class="aresta aresta-esquerda rep-aresta"></span>
+                                </div>
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>G</p>
+                                    <span class="aresta aresta-direita rep-aresta"></span>
+                                    <span class="aresta aresta-esquerda rep-aresta"></span>
+                                </div>
+                            </div>
+                            <div class="rep-c4">
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>H</p>
+                                </div>
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>I</p>
+                                </div>
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>J</p>
+                                </div>
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>K</p>
+                                </div>
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>L</p>
+                                </div>
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>M</p>
+                                </div>
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>N</p>
+                                </div>
+                                <div class="no">
+                                    <div class="background"></div>
+                                    <p>O</p>
+                                </div>
+                            </div>
+
+                            <div class="desc-representacao">
+                                <p>Há diversas formas de se representa uma árvore, dentre elas há a representação hierárquica, que se assemelha a uma árvore genealógica <strong>(é a melhor representação de uma ávore)</strong></p>
+                            </div>
+
+                        </div>
+                        <div class="img">
+
+                            <div class="container-representacao-venn">
+                                <div class="conjunto-a conjunto">
+                                    <p>A</p>
+                                    <div class="conjunto-b conjunto">
+                                        <p>B</p>
+                                        <div class="conjunto-d conjunto">
+                                            <p>D</p>
+                                        </div>
+                                    </div>
+                                    <div class="conjunto-c conjunto">
+                                        <p>C</p>
+                                        <div class="conjunto-e conjunto">
+                                            <p>E</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="desc-representacao">
+                                <p>Temos também a forma de representar usando conjuntos pelo diagrama de venn <strong>(Cada subárvore é dada como um conjunto)</strong></p>
+                            </div>
+                        </div>
+                        <div class="img">
+
+                            <div class="representacao-numerica-parentesis">
+                                <div class="parentesis"><p>(A (B (D ( ) E ( ) ) ) C ( F ( ) ) )</p></div>
+                                <div class="numerica"><p>A 2 B 2 D 0 E 0 C 1 F 0</p></div>
+                            </div>
+                            <div class="desc-representacao">
+                                <p>A forma de representação com e sem parêntesis <strong>(Parêntesis vazios representam um nó vazio)</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow arrow-direita">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-step-forward"><line x1="6" x2="6" y1="4" y2="20"/><polygon points="10,4 20,12 10,20"/></svg>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <script>
+
+        let arrows = document.querySelectorAll('.arrow')
+
+        cont = 0;
+        arrows[1].addEventListener('click' , () => {
+            let img = document.querySelector('.img')
+            cont = cont + 1000
+            if(cont >= 3000){
+                cont = 0
+            }
+            img.style.marginLeft = `-${cont}px` 
+        })
+
+        arrows[0].addEventListener('click' , () => {
+            let img = document.querySelector('.img')
+            cont = cont - 1000
+            if(cont < 0){
+                cont = 2000
+            }
+            img.style.marginLeft = `-${cont}px` 
+        })
+
+
+
+        let btnMain = document.getElementById('comecar-main')
+        btnMain.addEventListener('click', () =>{
+            animaçãoTituloSobre()
+            let sectionMain = document.getElementById('main-div');
+            sectionMain.style.display = 'flex'
+            
+            let containerBtn = document.getElementById('cm');
+            containerBtn.style.display = 'none'
+        });
+
+        let btnSobre = document.getElementById('comecar-sobre')
+        btnSobre.addEventListener('click', () =>{
+            scrollAnimacao('sobre')
+            let sectionSobre = document.getElementById('div-sobre');
+            sectionSobre.style.display = 'flex'
+            let containerBtn = document.getElementById('cs');
+            containerBtn.style.display = 'none'
+        });
+
+
+                //Animação Scroll
+        const menuopt = document.querySelectorAll('.menu-opt')
+        menuopt.forEach((item) => {
+            item.addEventListener('click', (event) => {
+                scrollAnimacao(item.classList[1])
+            });
+        });
+        //Animação Scroll
+
+
+        //FuncaoScroll
+        function scrollAnimacao(item){
+            let id = item
+            const section = document.getElementById(id)
+            console.log(section)
+            let to = section.offsetTop - 100
+            
+            let scrollPositionA = window.scrollY;
+            let scrollPositionB = scrollPositionA
+
+            let scrollanimado = setInterval(() => {
+                
+                if(scrollPositionB < to){
+                    if(scrollPositionA == to || scrollPositionA > to){
+                        clearInterval(scrollanimado)
+                    }
+                    scrollPositionA+= 8
+                    window.scroll(scrollPositionB, scrollPositionA)
+                
+                } else if(scrollPositionB > to){
+
+                    if(scrollPositionA == to || scrollPositionA < to){
+                        clearInterval(scrollanimado)
+                    }
+                    scrollPositionA-= 10
+                    window.scroll(scrollPositionB, scrollPositionA)
+                
+                }
+                
+            }, 1)
+        }
+
+
+        const tituloSobre = document.getElementById('main-title')
+        console.log(tituloSobre)
+        
+        function animaçãoTituloSobre() {
+            setTimeout(() => {
+                tituloSobre.style.opacity = '1';
+                let letras = tituloSobre.textContent.split(''); 
+                tituloSobre.textContent = ''; 
+                let cont = 0;
+                letras.forEach((letra, index) => {
+                    let span = document.createElement('span');
+                    span.textContent = letra; 
+                    span.classList.add('tituloLetra');
+                    span.style.animationDelay = `${index * 0.1}s`; 
+                    tituloSobre.appendChild(span);
+                    if (cont == 7 || cont == 9 || cont == 20 || cont == 22) {
+                        let espaco = document.createElement('span');
+                        espaco.textContent = ' ';
+                        tituloSobre.appendChild(espaco); 
+                    } 
+                    cont++;
+                }); 
+            }, 400);
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 50px auto;
+            background-color: #f0f0f0;
+        }
+        
+        .div1, .div2 {
+            width: 50px;
+            height: 50px;
+            background-color: #4B4B4B;
+            position: absolute;
+        }
+        
+        .div1 {
+            top: 50px;
+            left: 50px;
+        }
+        
+        .div2 {
+            bottom: 50px;
+            right: 50px;
+        }
+        
+        .line {
+            position: absolute;
+            top: 75px; /* Ajuste para alinhar a linha com o centro das divs */
+            left: 75px; /* Ajuste para alinhar a linha com o centro das divs */
+            width: 2px;
+            height: calc(100% - 150px); /* Ajuste para o tamanho do contêiner menos a posição das divs */
+            background-color: #36D6E7;
+            transform-origin: top left;
+            transform: rotate(45deg) scaleY(0);
+            animation: grow-line 2s forwards;
+        }
+        
+        @keyframes grow-line {
+            from {
+                transform: rotate(45deg) scaleY(0);
+            }
+            to {
+                transform: rotate(45deg) scaleY(1);
+            }
+        }
+    </style>
+    <title>Exemplo de Animação de Linha Diagonal</title>
+</head>
+<body>
+    <div class="container">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="line"></div>
+    </div>
+</body>
+</html>
