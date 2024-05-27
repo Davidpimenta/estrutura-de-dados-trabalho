@@ -278,7 +278,7 @@
             <div class="container-content-definicoes">
                 <div class="arvore-tipos-nos">
                     <div class="column-c1">
-                        <div class="no">
+                        <div class="no" id="raizNo">
                             <div class="background"></div>
                             <p>A</p>
                             <span class="aresta aresta-direita column-aresta"></span>
@@ -287,23 +287,43 @@
                             <span class="tipo raizTipo"><p>Raiz</p></span>
                         </div>
                     </div>
-                    <div class="column-c2">
+                    
+                    
+                    
+                    <div class="column-c2" id="c2">
+                        <div class="backgroundColumn-container">
+                            <span class="backgroundColumn"></span>
+                            <span class="border-column" id="border-column1"></span>
+                        </div>
+
                         <div class="no">
                             <div class="background"></div>
                             <p>B</p>
                             <span class="aresta aresta-direita column-aresta"></span>
                             <span class="aresta aresta-esquerda column-aresta"></span>
                         </div>
+
                         <div class="no">
                             <div class="background"></div>
                             <p>C</p>
                             <span class="aresta aresta-direita column-aresta"></span>
                             <span class="aresta aresta-esquerda column-aresta"></span>
                         </div>
-                        <span class="traco-tipo traco-pais"></span>
-                        <span class="tipo paisTipo"><p>Pais / Nós internos</p></span>
+
+                        <span class="traco-tipo" id="tracoPais"></span>
+                        <span class="tipo" id="paisTipo"><p>Pais / Nós internos</p></span>
+                        
                     </div>
+                    
+                    
+                    
+                    
                     <div class="column-c3">
+                        <div class="backgroundColumn-container">
+                            <span class="backgroundColumn"></span>
+                            <span class="border-column" id="border-column2"></span>
+                        </div>
+
                         <div class="no">
                             <div class="background"></div>
                             <p>D</p>
@@ -328,10 +348,18 @@
                             <span class="aresta aresta-direita column-aresta"></span>
                             <span class="aresta aresta-esquerda column-aresta"></span>
                         </div>
-                        <span class="traco-tipo traco-filhos"></span>
-                        <span class="tipo filhosTipo"><p>Filhos</p></span>
+
+                        <span class="traco-tipo" id="tracoFilhos"></span>
+                        <span class="tipo" id="filhosTipo"><p>Filhos</p></span>
                     </div>
+                   
                     <div class="column-c4">
+
+                        <div class="backgroundColumn-container" id="column-ultimo">
+                            <span class="backgroundColumn"></span>
+                            <span class="border-column" id="border-column3"></span>
+                        </div>
+
                         <div class="no">
                             <div class="background"></div>
                             <p>H</p>
@@ -364,9 +392,10 @@
                             <div class="background"></div>
                             <p>O</p>
                         </div>
-                        <span class="traco-tipo traco-folhas"></span>
-                        <span class="tipo folhasTipo"><p>Folhas / Nós terminais</p></span>
+                        <span class="traco-tipo" id="traco-folhas"></span>
+                        <span class="tipo" id="folhasTipo"><p>Folhas / Nós terminais</p></span>
                     </div>
+
                     <div class="desc-tipos">
                         <span class="arrowTextos arrow-carrocel-textos-esquerda">
                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-left"><circle cx="12" cy="12" r="10"/><path d="M16 12H8"/><path d="m12 8-4 4 4 4"/></svg>
@@ -374,13 +403,479 @@
                         
                         <div class="carrocel-textos">
                             <div class="desc-texto-tipo"><p><strong>Raiz:</strong> primeiro nó da árvore.</p></div>
-                            <div class="desc-texto-tipo"><p>teste2</p></div>
-                            <div class="desc-texto-tipo"><p>teste3</p></div>
+                            <div class="desc-texto-tipo"><p><strong>Pais / Nós internos:</strong> Antecessor de um vértice, nó que possui pelo menos um nó filho, logo ele possui um ou mais descendentes</p></div>
+                            <div class="desc-texto-tipo"><p><strong>Filhos:</strong> Sucessor de um vértice, nó que possui um ancestral</p></p></div>
+                            <div class="desc-texto-tipo"><p><strong>Folhas / Nós terminais:</strong> Nó que não tem filhos, logo um nó sem descendentes.</p></p></div>
                         </div>
                         <span class="arrowTextos arrow-carrocel-textos-direita">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-right"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="m12 16 4-4-4-4"/></svg>
                         </span>
                     </div>
+                </div>
+
+                <div class="arvore-tipos-nos2">
+                    <div class="container-arvore2">
+
+                        <div class="column-c1">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>A</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                                <div class="altura propriedades">
+                                    <p>Altura: 3</p>
+                                </div>
+                            </div>
+                            <div class="profundidade propriedades">
+                                <p>Profundidade: 0</p>
+                            </div>
+                            <div class="nivel propriedades">
+                                <p>Nível: 0</p>
+                            </div>
+                        </div>
+                        <div class="column-c2">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>B</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                                <div class="altura propriedades">
+                                    <p>Altura: 2</p>
+                                </div>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>C</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                            <div class="profundidade propriedades">
+                                <p>Profundidade: 1</p>
+                            </div>
+                            <div class="nivel propriedades">
+                                <p>Nível: 1</p>
+                            </div>
+                        </div>
+                        <div class="column-c3">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>D</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>E</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                                <div class="altura propriedades">
+                                    <p>Altura: 1</p>
+                                </div>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>F</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>G</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                            <div class="profundidade propriedades">
+                                <p>Profundidade: 2</p>
+                            </div>
+                            <div class="nivel propriedades">
+                                <p>Nível: 2</p>
+                            </div>
+                        </div>
+                        <div class="column-c4">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>H</p>
+                                <div class="altura propriedades">
+                                    <p>Altura: 0</p>
+                                </div>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>I</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>J</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>K</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>L</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>M</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>N</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>O</p>
+                                
+                            </div>
+                            <div class="profundidade propriedades">
+                                <p>Profundidade: 3</p>
+                            </div>
+                            <div class="nivel propriedades">
+                                <p>Nível: 3</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="desc-tipos">
+                        <span class="arrowTextos arrow-carrocel-textos-esquerda">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-left"><circle cx="12" cy="12" r="10"/><path d="M16 12H8"/><path d="m12 8-4 4 4 4"/></svg>
+                        </span>
+                        
+                        <div class="carrocel-textos">
+                            <div class="desc-texto-tipo desc-texto-tipo2"><p><strong>Profundidade:</strong> É a distância de um nó até a raiz.</p></div>
+                            <div class="desc-texto-tipo"><p><strong>Nível:</strong> É o conjunto de nós com a mesma profundidade. O nó raiz possui nível 0</p></div>
+                            <div class="desc-texto-tipo"><p><strong>Altura:</strong> É o comprimento do caminho mais longo entre o um nó e uma folha</p></div>
+                        </div>
+                        <span class="arrowTextos arrow-carrocel-textos-direita">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-right"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="m12 16 4-4-4-4"/></svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="arvore-tipos-nos3">
+                    <div class="container-arvore3">
+
+                        <div class="column-c1">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>A</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                                <span class="grau"><p>Grau: 2</p></span>
+                            </div>
+                        </div>
+                        <div class="column-c2">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>B</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                                <span class="grau"><p>Grau: 2</p></span>
+                            </div>
+                            <div class="no">
+                                <span class="subarvore-c">
+                                    <p>Subárvore C</p>
+                                </span>
+                                <div class="background"></div>
+                                <p>C</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                                <span class="grau"><p>Grau: 2</p></span>
+                            </div>
+                        </div>
+                        <div class="column-c3">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>D</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                                <span class="grau"><p>Grau: 2</p></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>E</p>
+                                <span class="aresta aresta-direita column-aresta" style="opacity: 0;"></span>
+                                <span class="aresta aresta-esquerda column-aresta" style="opacity: 0;"></span>
+                                <span class="grau grauPbaixo"><p>Grau: 0</p></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>F</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                                <span class="aresta aresta-centro column-aresta"></span>
+                                <span class="grau"><p>Grau: 3</p></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>G</p>
+                                <span class="aresta aresta-direita column-aresta" style="opacity: 0;"></span>
+                                <span class="aresta aresta-esquerda column-aresta" style="opacity: 0;"></span>
+                                <span class="grau ladoPgrau"><p>Grau: 0</p></span>
+                            </div>
+                        </div>
+                        <div class="column-c4">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>H</p>
+                                <span class="grau grauPbaixo"><p>Grau: 0</p></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>I</p>
+                                <span class="grau grauPbaixo"><p>Grau: 0</p></span>
+                            </div>
+                            <div class="no" style="opacity: 0;">
+                                <div class="background"></div>
+                                <p>J</p>
+                                
+                            </div>
+                            <div class="no" style="opacity: 0;">
+                                <div class="background"></div>
+                                <p>K</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>J</p>
+                                <span class="grau grauPbaixo"><p>Grau: 0</p></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>K</p>
+                                <span class="grau grauPbaixo"><p>Grau: 0</p></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>L</p>
+                                <span class="grau grauPbaixo"><p>Grau: 0</p></span>
+                            </div>
+                            <div class="no" style="opacity: 0;">
+                                <div class="background"></div>
+                                <p>M</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc-tipos">
+                        <span class="arrowTextos arrow-carrocel-textos-esquerda">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-left"><circle cx="12" cy="12" r="10"/><path d="M16 12H8"/><path d="m12 8-4 4 4 4"/></svg>
+                        </span>
+                        
+                        <div class="carrocel-textos">
+                            <div class="desc-texto-tipo desc-texto-tipo3"><p><strong>Subárvore:</strong> É um conjunto de nós formado a partir de um determinado nó</p></div>
+                            <div class="desc-texto-tipo"><p><strong>Grau:</strong> O número de subárvores de cada nó</p></div>
+                        </div>
+                        <span class="arrowTextos arrow-carrocel-textos-direita">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-right"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="m12 16 4-4-4-4"/></svg>
+                        </span>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section" id="tipos">
+        <div class="container-all-tipos">
+            <div class="container-title-tipos">
+                <h2>Tipos de árvore</h2>
+            </div>
+
+            <div class="container-content-tipos">
+
+                <div class="container-arvores-tipos">
+                    
+                    <div class="arvoreTipo arvoreTipo1">
+
+                        <div class="column-c1">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>A</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                        </div>
+                        <div class="column-c2">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>B</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>C</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                        </div>
+                        <div class="column-c3">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>D</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>E</p>
+                                <span class="aresta aresta-direita column-aresta" style="opacity: 0;"></span>
+                                <span class="aresta aresta-esquerda column-aresta" style="opacity: 0;"></span>
+                                <span class="no-N">Nó: E</span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>F</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>G</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                        </div>
+                        <div class="column-c4">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>H</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>I</p>
+                                <span class="no-N">Nó: I</span>
+                            </div>
+                            <div class="no" style="opacity: 0;">
+                                <div class="background"></div>
+                                <p>J</p>
+                            </div>
+                            <div class="no" style="opacity: 0;">
+                                <div class="background"></div>
+                                <p>K</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>L</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>M</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>N</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>O</p>
+                            </div>
+                        </div>
+
+                        <div class="desc-tipo">
+                            <h3>Árvore Binária Completa</h3>
+                            <p>Uma árvore binária completa é uma árvore em que todos os níveis, exceto possivelmente o último, estão completamente preenchidos, logo se um nó tiver uma subárvore vazia ele estará no último ou penúltimo nível da árvore, pois essa árvore é somente binária, logo cada nó pode ter 2, 1 ou 0 filhos.</p>
+                        </div>
+                    </div>
+
+                    <div class="arvoreTipo">
+                        <div class="column-c1">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>A</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                        </div>
+                        <div class="column-c2">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>B</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>C</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                        </div>
+                        <div class="column-c3">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>D</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>E</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>F</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>G</p>
+                                <span class="aresta aresta-direita column-aresta"></span>
+                                <span class="aresta aresta-esquerda column-aresta"></span>
+                            </div>
+                        </div>
+                        <div class="column-c4">
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>H</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>I</p>
+                                <span class="no-N noNPB">Nó: I</span>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>J</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>K</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>L</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>M</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>N</p>
+                            </div>
+                            <div class="no">
+                                <div class="background"></div>
+                                <p>O</p>
+                            </div>
+                        </div>
+
+                        <div class="desc-tipo">
+                            <h3>Árvore Binária Cheia</h3>
+                            <p>Uma árvore binária cheia é uma árvore que caso um nó tenha alguma subárvore vazia, logo ele está no último nível, pois essa árvore é estritamente binária, logo todos os nós tem 2 filhos ou 0.</p>
+                        </div>
+                    </div>
+                    <div class="arvoreTipo"></div>
+                    </div>
+
+
+                <div class="container-tipos-opts">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ut ullam aut deleniti pariatur beatae dolorem fuga recusandae voluptatibus excepturi ratione aliquam, quas libero, sit explicabo iste fugiat quaerat! Voluptatum.</div>
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, exercitationem. Doloribus maxime dicta delectus quo nulla dolorem? Maxime nihil quos ipsam, esse aut laboriosam ab harum magnam. Fugiat, aliquid sunt.</div>
+                    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi pariatur libero facilis hic. Veritatis similique, perspiciatis aliquid unde, itaque ducimus facilis cum vel recusandae, ab in enim nobis officia!</div>
                 </div>
             </div>
         </div>
@@ -388,27 +883,160 @@
 
     <script>
 
+        let destaqueArray = [false,false,false]
+
         let arrowsText = document.querySelectorAll('.arrowTextos');
 
+        
         let contT = 0;
 
         arrowsText[0].addEventListener('click' , () => {
             let texto = document.querySelector('.desc-texto-tipo')
             contT = contT - 655
             if(contT < 0){
-                contT = 1310
+                contT = 1965
             }
+
             texto.style.marginLeft = `-${contT}px` 
         })
 
         arrowsText[1].addEventListener('click', () => {
             let texto = document.querySelector('.desc-texto-tipo')
             contT = contT + 655
-            if(contT >= 1965){
+            if(contT >= 2620){
                 contT = 0
+            }
+
+            if(!destaqueArray[0]){
+                destaqueArray[0] = true
+
+                let paisTipo = document.getElementById('paisTipo')
+                paisTipo.classList.add('paisTipo')
+
+                setTimeout(() => {
+                    let traco = document.getElementById('tracoPais')
+                    traco.classList.add('traco-pais')
+                }, 500)
+
+                setTimeout(() => {
+                    let bordercolumn = document.getElementById('border-column1')
+                    bordercolumn.classList.add('border-column-animation')
+                }, 2200)
+                
+                
+            } else if(!destaqueArray[1]){
+                destaqueArray[1] = true
+
+                let tipo = document.getElementById('filhosTipo')
+                tipo.classList.add('filhosTipo')
+
+                setTimeout(() => {
+                    let traco = document.getElementById('tracoFilhos')
+                    traco.classList.add('traco-filhos')
+                }, 500)
+
+                setTimeout(() => {
+                    let bordercolumn = document.getElementById('border-column2')
+                    bordercolumn.classList.add('border-column-animation')
+                }, 2200)
+
+            } else {
+                destaqueArray[2] = true
+
+                let tipo = document.getElementById('folhasTipo')
+                tipo.classList.add('folhasTipo')
+
+                setTimeout(() => {
+                    let traco = document.getElementById('traco-folhas')
+                    traco.classList.add('traco-folhas')
+                }, 500)
+
+                setTimeout(() => {
+                    let bordercolumn = document.getElementById('border-column3')
+                    bordercolumn.classList.add('border-column-animation')
+                }, 2200)
             }
             texto.style.marginLeft = `-${contT}px` 
         })
+
+        let contT2 = 0
+        let destaquePropriedades = [false,false,false]
+
+        arrowsText[2].addEventListener('click' , () => {
+            let texto = document.querySelector('.desc-texto-tipo2')
+            contT2 = contT2 - 655
+            if(contT2 < 0){
+                contT2 = 1310
+            }
+
+            texto.style.marginLeft = `-${contT2}px` 
+        })
+
+        arrowsText[3].addEventListener('click' , () => {
+            let texto = document.querySelector('.desc-texto-tipo2')
+            contT2 = contT2 + 655
+            if(contT2 >= 1965){
+                contT2 = 0
+            }
+
+            if(!destaquePropriedades[0]){
+                destaquePropriedades[0] = true
+
+                let propriedade = document.querySelectorAll('.nivel')
+                propriedade.forEach((nivel) => {
+                    nivel.classList.add('nivelView')
+                })
+                
+            } else if(!destaquePropriedades[1]){
+                destaquePropriedades[1] = true
+
+                let propriedade = document.querySelectorAll('.altura')
+                propriedade.forEach((altura) => {
+                    altura.classList.add('alturaView')
+                })
+
+            } else {
+                destaquePropriedades[2] = true
+
+            }
+
+            texto.style.marginLeft = `-${contT2}px` 
+        })
+
+
+        let verificaGrau = false
+        arrowsText[4].addEventListener('click' , () => {
+            let texto = document.querySelector('.desc-texto-tipo3')
+            contT3 = contT3 - 655
+            if(contT3 < 0){
+                contT3 = 655
+            }
+
+
+            texto.style.marginLeft = `-${contT3}px` 
+        })
+
+        let contT3 = 0;
+        arrowsText[5].addEventListener('click' , () => {
+            console.log('teste')
+            let texto = document.querySelector('.desc-texto-tipo3')
+            contT3 = contT3 + 655
+            if(contT3 >= 1310){
+                contT3 = 0
+            }
+
+            if(!verificaGrau){
+                verificaGrau = true
+                
+                let graus = document.querySelectorAll('.grau')
+                graus.forEach((grau) => {
+                    grau.classList.add('grauView')
+                })
+            }
+
+            texto.style.marginLeft = `-${contT3}px` 
+        })
+
 
 
         let arrows = document.querySelectorAll('.arrow')
@@ -468,7 +1096,6 @@
         function scrollAnimacao(item){
             let id = item
             const section = document.getElementById(id)
-            console.log(section)
             let to = section.offsetTop - 100
             
             let scrollPositionA = window.scrollY;
@@ -498,7 +1125,6 @@
 
 
         const tituloSobre = document.getElementById('main-title')
-        console.log(tituloSobre)
         
         function animaçãoTituloSobre() {
             setTimeout(() => {
