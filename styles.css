@@ -1302,7 +1302,6 @@ strong{
 .arvoreTipo{
     transition: 1s all;
     width: 1000px;
-    margin-bottom: 150px;
 }
 
 .container-content-tipos{
@@ -1311,18 +1310,17 @@ strong{
 }
 
 .container-arvores-tipos{
-    width: 4000px;
+    width: 10000px;
     display: flex;
     flex-direction: row;
 }
 
 .arvoreTipo1{
-    margin-left: -1000px;
 }
 
 
 .container-tipos-opts{
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .desc-tipo{
@@ -1359,4 +1357,16 @@ strong{
 .noNPB{
     left: 0%;
     top: 120%;
+}
+
+
+.container-mudarArvore{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container-mudarArvore svg{
+    color: var(--principal);
+    cursor: pointer;
 }
