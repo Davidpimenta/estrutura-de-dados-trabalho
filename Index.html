@@ -26,6 +26,7 @@
                         <li class="menu-opt definicoes">Definições</li>
                         <li class="menu-opt tipos">Tipos</li>
                         <li class="menu-opt percorrendo">Percorrendo</li>
+                        <li class="menu-opt operacoes">Operações</li>
                         <li class="menu-opt utilidades">Ultilidades</li>
                     </ul>
                 </nav>
@@ -1591,13 +1592,439 @@
                     
                     <div class="arrowTrocaArvore"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-left"><circle cx="12" cy="12" r="10"></circle><path d="M16 12H8"></path><path d="m12 8-4 4 4 4"></path></svg></div>
 
+
                     <div class="arrowTrocaArvore"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-right"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path><path d="m12 16 4-4-4-4"></path></svg></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="section" id="percorrendo">
+
+        <div class="container-all-percorrendo">
+            <div class="container-title-percorrendo">
+                <h2>Percorrendo uma árvore</h2>
+            </div>
+
+            <div class="container-content-percorrendo">
+                
+                <div class="column-c1">
+                    <div class="no">
+                        <div class="background noAnimado" id="noF"></div>
+                        <p>F</p>
+                        <span class="aresta aresta-direita column-aresta"></span>
+                        <span class="aresta aresta-esquerda column-aresta"></span>
+                    </div>
+                </div>
+                <div class="column-c2">
+                    <div class="no">
+                        <div class="background noAnimado" id="noB"></div>
+                        <p>B</p>
+                        <span class="aresta aresta-direita column-aresta"></span>
+                        <span class="aresta aresta-esquerda column-aresta"></span>
+                    </div>
+                    <div class="no">
+                        <div class="background noAnimado" id="noG"></div>
+                        <p>G</p>
+                        <span class="aresta aresta-direita column-aresta"></span>
+                        <span class="aresta aresta-esquerda column-aresta" style="opacity: 0;"></span>
+                    </div>
+                </div>
+                <div class="column-c3">
+                    <div class="no">
+                        <div class="background noAnimado" id="noA"></div>
+                        <p>A</p>
+                        <span class="aresta aresta-direita column-aresta" style="opacity: 0;"></span>
+                        <span class="aresta aresta-esquerda column-aresta" style="opacity: 0;"></span>
+                    </div>
+                    <div class="no">
+                        <div class="background noAnimado" id="noD"></div>
+                        <p>D</p>
+                        <span class="aresta aresta-direita column-aresta"></span>
+                        <span class="aresta aresta-esquerda column-aresta"></span>
+                    </div>
+                    <div class="no" style="opacity: 0;">
+                        <div class="background"></div>
+                        <p>F</p>
+                        <span class="aresta aresta-direita column-aresta"></span>
+                        <span class="aresta aresta-esquerda column-aresta"></span>
+                    </div>
+                    <div class="no">
+                        <div class="background noAnimado" id="noI"></div>
+                        <p>I</p>
+                        <span class="aresta aresta-direita column-aresta" style="opacity: 0;"></span>
+                        <span class="aresta aresta-esquerda column-aresta"></span>
+                    </div>
+                </div>
+                <div class="column-c4">
+                    <div class="no" style="opacity: 0;">
+                        <div class="background"></div>
+                        <p>H</p>
+                    </div>
+                    <div class="no" style="opacity: 0;">
+                        <div class="background"></div>
+                        <p>I</p>
+                    </div>
+                    <div class="no">
+                        <div class="background noAnimado" id="noC"></div>
+                        <p>C</p>
+                    </div>
+                    <div class="no">
+                        <div class="background noAnimado" id="noE"></div>
+                        <p>E</p>
+                    </div>
+                    <div class="no" style="opacity: 0;">
+                        <div class="background"></div>
+                        <p>L</p>
+                    </div>
+                    <div class="no" style="opacity: 0;">
+                        <div class="background"></div>
+                        <p>M</p>
+                    </div>
+                    <div class="no">
+                        <div class="background noAnimado" id="noH"></div>
+                        <p>H</p>
+                    </div>
+                    <div class="no" style="opacity: 0;">
+                        <div class="background"></div>
+                        <p>O</p>
+                    </div>
+
+                    
+                </div>
+                <div class="container-text"><p class="text-percorrendo"></p></div>
+                
+                <div class="percorrendo-opts">
+                    <div class="opt">
+                        <div class="border-opt"></div>
+                        <div class="background-opt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"          
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide- 
+                            play"><polygon points="6 3 20 12 6 21 6 3"/>
+                            </svg>
+                            <h3>Pré-Ordem</h3> 
+                        </div>
+                    </div>
+                    <div class="opt">
+                        <div class="border-opt"></div>
+                        <div class="background-opt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"          
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide- 
+                            play"><polygon points="6 3 20 12 6 21 6 3"/>
+                            </svg>
+                            <h3>Em Ordem</h3> 
+                        </div>
+                    </div>
+                    <div class="opt">
+                        <div class="border-opt" id="posborder"></div>
+                        <div class="background-opt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"          
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide- 
+                            play"><polygon points="6 3 20 12 6 21 6 3"/>
+                            </svg>
+                            <h3>Pós-Ordem</h3> 
+                        </div>
+                    </div>
+                </div>
+                <div class="container-arrowTroca-no">
+                        
+                    <div class="arrowTrocaNo"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-left"><circle cx="12" cy="12" r="10"></circle><path d="M16 12H8"></path><path d="m12 8-4 4 4 4"></path></svg></div>
+
+
+                    <div class="arrowTrocaNo"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-right"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path><path d="m12 16 4-4-4-4"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section" id="operacoes">
+        <div class="container-all-operacoes">
+            <div class="container-title-operacoes">
+                <h2>Operações com árvores</h2>
+            </div>
+
+            <div class="container-content-operacoes">
+                <div class="container-arvore-operacoes">
+                    <div class="column-c1">
+                        <div class="no">
+                            <div class="background"></div>
+                            <p>500</p>
+                            <span class="aresta aresta-direita column-aresta"></span>
+                            <span class="aresta aresta-esquerda column-aresta"></span>
+                        </div>
+                    </div>
+                    <div class="column-c2">
+                        <div class="no">
+                            <div class="background"></div>
+                            <p>250</p>
+                            <span class="aresta aresta-direita column-aresta"></span>
+                            <span class="aresta aresta-esquerda column-aresta"></span>
+                        </div>
+                        <div class="no">
+                            <div class="background"></div>
+                            <p>750</p>
+                            <span class="aresta aresta-direita column-aresta"></span>
+                            <span class="aresta aresta-esquerda column-aresta"></span>
+                        </div>
+                    </div>
+                    <div class="column-c3">
+                        <div class="no">
+                            <div class="background"></div>
+                            <p>175</p>
+                            <span class="aresta aresta-direita column-aresta" style="opacity: 0;",></span>
+                            <span class="aresta aresta-esquerda column-aresta"></span>
+                        </div>
+                        <div class="no">
+                            <div class="background"></div>
+                            <p>305</p>
+                            <span class="aresta aresta-direita column-aresta"></span>
+                            <span class="aresta aresta-esquerda column-aresta"></span>
+                        </div>
+                        <div class="no">
+                            <div class="background"></div>
+                            <p>630</p>
+                            <span class="aresta aresta-direita column-aresta"></span>
+                            <span class="aresta aresta-esquerda column-aresta" style="opacity: 0;"></span>
+                        </div>
+                        <div class="no">
+                            <div class="background"></div>
+                            <p>890</p>
+                            <span class="aresta aresta-direita column-aresta"></span>
+                            <span class="aresta aresta-esquerda column-aresta" style="opacity: 0;"></span>
+                        </div>
+                    </div>
+                    <div class="column-c4">
+                        <div class="no">
+                            <div class="background"></div>
+                            <p>75</p>
+                        </div>
+                        <div class="no" style="opacity: 0;">
+                            <div class="background"></div>
+                            <p>I</p>
+                        </div>
+                        <div class="no">
+                            <div class="background"></div>
+                            <p>275</p>
+                        </div>
+                        <div class="no">
+                            <div class="background"></div>
+                            <p>432</p>
+                        </div>
+                        <div class="no" style="opacity: 0;">
+                            <div class="background"></div>
+                            <p>L</p>
+                        </div>
+                        <div class="no">
+                            <div class="background"></div>
+                            <p>691</p>
+                        </div>
+                        <div class="no" style="opacity: 0;">
+                            <div class="background"></div>
+                            <p>N</p>
+                        </div>
+                        <div class="no">
+                            <div class="background"></div>
+                            <p>1355</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-codigo-operacoes">
+                    <div class="carrocelCode">
+                        <div class="code" id="code1">
+                            <h3>Adicionando nós em uma árvore</h3>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div class="code">
+                            <h3>Removendo nós em uma árvore</h3>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script>
+
+        function verificaOpt(){
+            
+            if(opts[0].classList.length > 1){
+                opts[0].classList.remove('selectOpt')
+                let border = opts[0].querySelector('.border-opt')
+                border.classList.remove('border-optActv')
+            }
+
+            if(opts[1].classList.length > 1){
+                opts[1].classList.remove('selectOpt')
+                let border = opts[1].querySelector('.border-opt')
+                border.classList.remove('border-optActv')
+            }
+
+            if(opts[2].classList.length > 1){
+                opts[2].classList.remove('selectOpt')
+                let border = opts[2].querySelector('.border-opt')
+                border.classList.remove('border-optActv')
+            }
+
+        }
+
+        function retiraNos(){
+            noCont = -1
+            for(let i = 0; i < preOrdemArray.length; i++){
+                no = document.getElementById(preOrdemArray[i])    
+                no.classList.remove('noanimation')
+            }
+        }
+
+        let preOrdemArray = ['noF','noB','noA','noD','noC','noE','noG','noI','noH']
+        let noCont = -1;
+
+        function noContAdd(int){
+            if(int == 0){
+                noCont = 0
+            }  
+            
+            if(int == 1){
+                noCont++
+                if(noCont == preOrdemArray.length){
+                    noCont = 0;
+                }
+
+            } else {
+                noCont--
+                console.log(noCont)
+                if(noCont < 0){
+                    noCont = preOrdemArray.length - 1
+                }
+            }
+        }
+
+        function animationPreOrdem(int = 0){
+            
+            noContAdd(int);
+
+            let p = document.querySelector('.text-percorrendo')
+            p.textContent = 'Na pré-ordem vamos começar pela raiz, depois o nó da esquerda e depois o nó da direita: F, B, A, D, C, E, G, I, H,'
+            let no
+            for(let i = 0; i < preOrdemArray.length; i++){
+                no = document.getElementById(preOrdemArray[i])    
+                no.classList.remove('noanimation')
+            }
+            
+            no = document.getElementById(preOrdemArray[noCont])
+            no.classList.add('noanimation')
+           
+
+        }
+
+
+        let emOrdemArray = ['noA','noB','noC','noD','noE','noF','noG','noH','noI']
+        function animationEmOrdem(int = 0){   
+
+            noContAdd(int);
+
+            let p = document.querySelector('.text-percorrendo')
+            p.textContent = 'Na ordem vamos começar pelo nó da esquerda, depois a raiz e depois o nó da direita: A, B, C, D, E, F, G, H, I,'
+
+            let no
+            for(let i = 0; i < emOrdemArray.length; i++){
+                no = document.getElementById(emOrdemArray[i])    
+                no.classList.remove('noanimation')
+            }
+            
+            no = document.getElementById(emOrdemArray[noCont])
+            no.classList.add('noanimation')
+            
+        }
+
+
+        let posOrdemArray = ['noA','noC','noE','noD','noB','noH','noI','noG','noF']
+        function animationPosOrdem(int = 0){  
+            
+            noContAdd(int);
+
+            let p = document.querySelector('.text-percorrendo')
+            p.textContent = 'Na pós-ordem vamos começar pelo nó da esquerda, depois o nó da direita e por final a raiz: A, C, E, D, B, H, I, G, F'
+
+            let no
+            for(let i = 0; i < posOrdemArray.length; i++){
+                no = document.getElementById(posOrdemArray[i])    
+                no.classList.remove('noanimation')
+            }
+            
+            no = document.getElementById(posOrdemArray[noCont])
+            no.classList.add('noanimation')
+            
+        }
+
+        let ordemEscolhidaArray = [false, false, false]
+
+        let arrowNos = document.querySelectorAll('.arrowTrocaNo')
+        arrowNos[1].addEventListener('click', () => {
+
+            if(ordemEscolhidaArray[0]){
+                animationPreOrdem(1)
+            } else if(ordemEscolhidaArray[1]){
+                animationEmOrdem(1)
+            } else {
+                animationPosOrdem(1)
+            }
+
+        })
+
+        arrowNos[0].addEventListener('click', () => {
+            if(ordemEscolhidaArray[0]){
+                animationPreOrdem(2)
+            } else if(ordemEscolhidaArray[1]){
+                animationEmOrdem(2)
+            } else {
+                animationPosOrdem(2)
+            }
+        })
+
+
+        let opts = document.querySelectorAll('.opt')
+
+        opts[0].addEventListener('click', () =>{
+            retiraNos()
+            ordemEscolhidaArray[0] = true
+            ordemEscolhidaArray[1] = false
+            ordemEscolhidaArray[2] = false
+            verificaOpt()
+            opts[0].classList.add('selectOpt')
+            let border = opts[0].querySelector('.border-opt')
+            border.classList.add('border-optActv')
+        })
+
+        opts[1].addEventListener('click', () =>{
+            retiraNos()
+            ordemEscolhidaArray[1] = true
+            ordemEscolhidaArray[0] = false
+            ordemEscolhidaArray[2] = false
+            verificaOpt()
+            opts[1].classList.add('selectOpt')
+            let border = opts[1].querySelector('.border-opt')
+            border.classList.add('border-optActv')
+        })
+
+        opts[2].addEventListener('click', () =>{
+            retiraNos()
+            ordemEscolhidaArray[2] = true
+            ordemEscolhidaArray[1] = false
+            ordemEscolhidaArray[0] = false
+            verificaOpt()  
+            opts[2].classList.add('selectOpt')
+            let border = opts[2].querySelector('.border-opt')
+            border.classList.add('border-optActv')
+        })
+
+
 
         let arrowTrocaArvores = document.querySelectorAll('.arrowTrocaArvore')  
 
