@@ -1831,26 +1831,75 @@
                     </div>
                 </div>
                 <div class="container-codigo-operacoes">
-                    <div class="carrocelCode">
-                        <div class="code" id="code1">
-                            <h3>Adicionando nós em uma árvore</h3>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                        </div>
-                        <div class="code">
-                            <h3>Removendo nós em uma árvore</h3>
-                            <p></p>
-                            <p></p>
-                            <p></p>
+                    <div class="container-opt-code">
+                            
+                        <div class="optCode"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-left"><circle cx="12" cy="12" r="10"></circle><path d="M16 12H8"></path><path d="m12 8-4 4 4 4"></path></svg></div>
+    
+    
+                        <div class="optCode"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-right"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path><path d="m12 16 4-4-4-4"></path></svg>
                         </div>
                     </div>
+                    <div class="carrocelCode">
+                        <div class="code">
+                            <h3>Criando uma árvore</h3>
+                            <img src="images/declaracao.png" alt="declaracao" class="img-code">
+                            
+                        </div>
+                        <div class="code">
+                            <h3>Adicionando elementos na árvore</h3>
+                            <img src="images/adicionando.png" alt="adicionando" class="img-code">
+                            <p class="desc-code">Para adicionarmos valores na árvore devemos seguir a regra de que:  valor menores que a raiz da árvore/subárvore atual deve ficar na esquerda e maiores a direita</p>
+                        </div>
+
+                        <div class="code">
+                            <h3>Removendo elementos de uma árvore</h3>
+                            <img src="images/remover.png" alt="remover" class="img-code">
+                        </div>
+
+                        <div class="code">
+                            <h3>Percorrendo uma árvore em PreOrdem</h3>
+                            <img src="images/preordem.png" alt="preodem" class="img-code">
+                        </div>
+
+                        <div class="code">
+                            <h3>Percorrendo uma árvore em ordem</h3>
+                            <img src="images/ordem.png" alt="Emordem" class="img-code">
+                        </div>
+
+                        <div class="code">
+                            <h3>Percorrendo uma árvore em pós-ordem</h3>
+                            <img src="images/posordem.png" alt="Posordem" class="img-code">
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </section>
 
     <script>
+
+        let optCodes = document.querySelectorAll('.optCode')
+        let optContCode = 0
+        optCodes[1].addEventListener('click', () => {
+            let containerCode = document.querySelector('.code')
+            optContCode = optContCode + 600
+
+            if(optContCode > 3000){
+                optContCode = 0
+            }
+            containerCode.style.marginLeft = `-${optContCode}px`
+        })
+
+        optCodes[0].addEventListener('click', () => {
+            let containerCode = document.querySelector('.code')
+            optContCode = optContCode - 1000
+
+            if(optContCode < 0){
+                optContCode = 3000
+            }
+            containerCode.style.marginLeft = `-${optContCode}px`
+        })
 
         function verificaOpt(){
             

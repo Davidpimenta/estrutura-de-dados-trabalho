@@ -1515,24 +1515,46 @@ strong{
 
 .container-codigo-operacoes{
     width: 500px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
+    gap: 5px;
 }
 
 .carrocelCode{
     display: flex;
     flex-direction: row;
-    width: 1000px;
+    gap: 100px;
+    width: 3600px;
 }
 
 .code{
     display: flex;
     width: 500px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     transition: 1s all;
 }
 
-#code1{
-    margin-left: -500px;
+.container-opt-code{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.container-opt-code svg{
+    color: var(--principal);
+}
+
+.img-code{
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.desc-code{
+    margin-top: 15px;
+    text-align: center;
 }
