@@ -1890,9 +1890,13 @@
 
     <section class="section" id="utilidades">
             <div class="container-title-utilidades">
-                <h2></h2>
+                <h2>Utilidades de árvores em estrutura de dados</h2>
             </div>
             <div class="container-all-utilidades">
+                <div class="container-btn-utilidades">
+                    <button class="btn-utilidades">Começar</button>
+                </div>
+
                 <div class="container-content-utilidades">
                     <div class="container-cards-utilidades">
                         <div class="card-utilidades">
@@ -1995,13 +1999,19 @@
 
     <script>
 
-        let cardUtilidades = document.querySelectorAll('.card-utilidades')
+        let btnUtilidades = document.querySelector('.btn-utilidades')
 
-        cardUtilidades.forEach((card, index) => {
-            setTimeout(() => {
-                console.log(card)
-                card.classList.add('card-utilidades-active')
-            }, index * 800)
+        btnUtilidades.addEventListener('click', () => {
+            let containerBtn = document.querySelector('.container-btn-utilidades')
+            containerBtn.style.display = "none"
+            let containerUtilidades = document.querySelector('.container-content-utilidades')
+            containerUtilidades.style.display = 'block' 
+            let cardUtilidades = document.querySelectorAll('.card-utilidades')
+            cardUtilidades.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('card-utilidades-active')
+                }, index * 800)
+            })
         })
 
         let optCodes = document.querySelectorAll('.optCode')

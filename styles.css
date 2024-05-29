@@ -1565,7 +1565,23 @@ strong{
     width: 100%;
 }
 
+.container-btn-utilidades{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-utilidades{
+    padding: 15px 10px;
+    border-radius: 15px;
+    border: 2px solid var(--principal);
+    background-color: var(--main);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
 .container-content-utilidades{
+    display: none;
     width: 80%;
     margin: auto;
     margin-top: 25px;
